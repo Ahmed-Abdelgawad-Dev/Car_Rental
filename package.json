@@ -1,5 +1,5 @@
 {
-  "name": "car_rental",
+  "name": "car-rental",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -15,6 +15,8 @@
   },
   "devDependencies": {
     "eslint": "8.10.0",
-    "eslint-config-next": "12.1.0"
+    "eslint-config-next": "12.1.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "2.5.1"
   }
 }
