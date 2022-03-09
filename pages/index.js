@@ -1,7 +1,7 @@
 export default function Home() {
     return (
         <div>
-            This is where the app goes
+            <h3>This is where the app goes</h3>
         </div>
     )
 }
