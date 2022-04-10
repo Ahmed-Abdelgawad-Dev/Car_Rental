@@ -1,7 +1,11 @@
+import Layout from '../components/Layout'
+
 export default function Home() {
     return (
-        <div>
-            <h3>This is where the app goes</h3>
-        </div>
+        <Layout>
+            <h1>klqewnclwnecl3w</h1>
+
+            <h1>test</h1>
+        </Layout>
     )
 }
