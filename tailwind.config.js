@@ -12,6 +12,7 @@ module.exports = {
   theme: {
     // || Here sizes can be configuered down under screens to match ||
     // || any css framework sizes(Here:  Bootstrap breakpoints - 1) ||
+    // || https://tailwindcss.com/docs/configuration ||
     screens: {
       sm: "575px",
       md: "767px",
