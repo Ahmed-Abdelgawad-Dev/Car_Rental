@@ -4,13 +4,12 @@ import Link from "next/link";
 const Appnavbar = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light tw-bg-white ">
+      <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light tw-bg-white tw-px-2">
         <div className="container-fluid">
           <Link href="/">
             <a>
               <img
                 style={{ width: "100px" }}
-                layout="fill"
                 classNameName="tw-w-10 tw-object-contain tw-cursor-pointer"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi4bmuZOzNXLTohhEgEn3jvwyH_BTl4-s02_-eGyAfNu8QYdOHmzAHbZk5-k7QnmMYJPc&usqp=CAU"
                 //   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi4bmuZOzNXLTohhEgEn3jvwyH_BTl4-s02_-eGyAfNu8QYdOHmzAHbZk5-k7QnmMYJPc&usqp=CAU"
@@ -18,7 +17,10 @@ const Appnavbar = () => {
               />
             </a>
           </Link>
-          <a className="tw-text-red-700 tw-font-semibold tw-uppercase" href="#">
+          <a
+            className="tw-text-red-700 tw-font-semibold tw-uppercase tw-font-mono"
+            href="#"
+          >
             Selmi cars
           </a>
           <button
@@ -32,33 +34,43 @@ const Appnavbar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-auto tw-space-x-10">
-              <li className="nav-item">
+          <div
+            className="collapse navbar-collapse "
+            id="navbarSupportedContent"
+          >
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-auto tw-space-x-20">
+              <Link href="#">
                 <a
-                  className="nav-link active tw-text-black-700 tw-font-semibold"
-                  aria-current="page"
+                  className="tw-text-black tw-font-semibold tw-uppercase hover:tw-text-red-700  hover:tw-text-lg"
                   href="#"
                 >
                   Home
                 </a>
-              </li>
-              <li className="nav-item">
+              </Link>
+              <Link href="#">
                 <a
-                  className="nav-link active tw-text-black tw-font-semibold "
+                  className="tw-text-black tw-font-semibold tw-uppercase hover:tw-text-red-700  hover:tw-text-lg"
                   href="#"
                 >
                   Car rental
                 </a>
-              </li>
-              <li className="nav-item">
+              </Link>
+              <Link href="#">
                 <a
-                  className="nav-link active tw-text-black-  tw-font-semibold"
+                  className="tw-text-black tw-font-semibold tw-uppercase hover:tw-text-red-700  hover:tw-text-lg"
+                  href="#"
+                >
+                  About
+                </a>
+              </Link>
+              <Link href="#">
+                <a
+                  className="tw-text-black tw-font-semibold tw-uppercase hover:tw-text-red-700  hover:tw-text-lg"
                   href="#"
                 >
                   Contact us
                 </a>
-              </li>
+              </Link>
             </ul>
             <form className="d-flex">
               <input

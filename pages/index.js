@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Appnavbar from "../components/layout/navbar";
+import Appcarousel from "../components/layout/appcarousel";
 import "bootstrap/dist/css/bootstrap.css";
 
 export default function Home() {
@@ -13,6 +14,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Appnavbar />
+      <main>
+        <Appcarousel />
+      </main>
     </div>
   );
 }
