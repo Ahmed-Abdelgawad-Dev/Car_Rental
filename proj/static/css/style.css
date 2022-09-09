@@ -1,0 +1,35 @@
+/**********? Start Layout **********/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/**********? End Layout **********/
+
+
+/********** Start Logo **********/
+
+#logo {
+    height: 70px;
+    width: auto;
+
+}
+
+/********** EndLogo **********/
+
+
+/**********? Start Nav List **********/
+#nav-list li a {
+    color: rgb(199, 17, 17);
+    font-weight: 500;
+    font-family: monospace,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#nav-list li a:hover {
+    color: rgb(255, 0, 0);
+    background-color: white;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+/**********? End Nav List **********/

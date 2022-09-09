@@ -2,4 +2,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def main_page(request):
-    return render(request, 'core/_base.html')
+    return render(request, 'core/base.html')
