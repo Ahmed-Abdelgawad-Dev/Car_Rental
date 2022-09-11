@@ -1,35 +1,93 @@
-/**********? Start Layout **********/
+/*! Start Break Points */
+    /*  Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) { ... }
+
+    Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) { ... }
+
+    Large devices (desktops, 992px and up)
+    @media (min-width: 992px) { ... }
+
+    X-Large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) { ... }
+
+    XX-Large devices (larger desktops, 1400px and up)
+    @media (min-width: 1400px) { ... } */
+/*! End Break Points */
+
+
+
+/**************************************** Start Global Vars ****************************************/
+:root {
+    --main-color:rgb(220,53,69);
+}
+
+/**************************************** End Global Vars ****************************************/
+
+/****************************************? Start Layout ****************************************/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
-/**********? End Layout **********/
 
+/****************************************? End Layout ****************************************/
 
-/********** Start Logo **********/
-
+/**************************************** Start Logo ****************************************/
 #logo {
     height: 70px;
     width: auto;
+    
+}
+/**************************************** End Logo ****************************************/
+/****************************************? Start Nav List ****************************************/
 
+#nav-link.active,
+#nav-link:focus,
+#nav-link:hover {
+    font-weight: bold;
 }
 
-/********** EndLogo **********/
-
-
-/**********? Start Nav List **********/
-#nav-list li a {
-    color: rgb(199, 17, 17);
-    font-weight: 500;
-    font-family: monospace,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+#navbar-toggler {
+    color: red;
+    size: 25px;
+    border-color: var(--main-color);
 }
+#navbar-toggler:focus {
+    box-shadow: none;
+}
+#navbar-toggler[aria-expanded='true'] {
+    border-color: black;
+}
+/* 
+@media (max-width: 576px) { 
+    #nav-list ul li a {
+        text-align: center;
+        letter-spacing: 2px;
+        font-weight: bolder;
+    }
+ } */
 
-#nav-list li a:hover {
-    color: rgb(255, 0, 0);
-    background-color: white;
+/* #nav-list ul li a:hover {
+    color: white;
+    background-color: rgb(199, 17, 17);
     border-radius: 10px;
     font-weight: 600;
-}
+} */
 
-/**********? End Nav List **********/
+.login {
+    padding-left: 0px;
+}
+/****************************************? End Nav List ****************************************/
+
+/**************************************** Start Landing ****************************************/
+.landing .landing-image {
+    background-image: url('../imgs/landing.jpeg');
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/**************************************** End Landing ****************************************/
