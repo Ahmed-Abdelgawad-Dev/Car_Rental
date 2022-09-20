@@ -1,13 +1,18 @@
 {% extends "core/base.html" %}
 
-{% block title %}
-Home
-{% endblock title %}
+{% block title %} Home {% endblock title %}
 
 {% block frontend %}
-    {% include 'core/partials/navbar.html' %}
-    {% include 'core/partials/landing.html' %}
-        
+    <div id="header">
+        {% include "core/header.html" %}
+    </div>
+    <div id="landing">
+        {% include "core/landing.html" %}
+    </div>
+    <div id="footer">
+        {% include "core/footer.html" %}
+    </div>
+    
 {% endblock  %}
     
 
