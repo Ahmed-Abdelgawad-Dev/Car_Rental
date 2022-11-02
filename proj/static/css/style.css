@@ -30,6 +30,7 @@
     margin: 0;
     box-sizing: border-box;
     
+    
 }
 
 /****************************************? End Layout ****************************************/
@@ -60,22 +61,8 @@
 }
 #navbar-toggler[aria-expanded='true'] {
     border-color: black;
+    
 }
-/* 
-@media (max-width: 576px) { 
-    #nav-list ul li a {
-        text-align: center;
-        letter-spacing: 2px;
-        font-weight: bolder;
-    }
- } */
-
-/* #nav-list ul li a:hover {
-    color: white;
-    background-color: rgb(199, 17, 17);
-    border-radius: 10px;
-    font-weight: 600;
-} */
 
 .login {
     padding-left: 0px;
@@ -83,13 +70,26 @@
 /****************************************? End Nav List ****************************************/
 
 /**************************************** Start Landing ****************************************/
-.landing .landing-image {
-    background-image: url('../imgs/landing.jpeg');
-    background-repeat: no-repeat;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
+#landing .element::before{
+    content: "";
+    background-color: black;
+    opacity: .3;
+    position: absolute;
+    width: 100%;
+    height: 135%;
+
 }
+
+/* Typped Js */
+/* #landing .typed-js::after{
+    content: "";
+    background-color: red;
+    opacity: .5;
+    position: absolute;
+    width: 100%;
+    height: 135%;
+    
+
+} */
 /**************************************** End Landing ****************************************/
 

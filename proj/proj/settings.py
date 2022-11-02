@@ -2,7 +2,8 @@
 Django 4.1.1.
 """
 from pathlib import Path
-
+import os
+import dotenv
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -11,7 +12,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-#&o_3z+!l0er61*-qaud@f0=adg=kox+r*fuz@$p4(14f=+qff'
+dotenv.load_dotenv()
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -114,7 +116,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/images/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
-STATIC_ROOT = "BASE_DIR / 'static'"
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 MEDIA_ROOT = 'static/images'
 
 # Default primary key field type
