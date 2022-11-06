@@ -29,6 +29,7 @@
     </title>
 </head>
 <body>
+    
     <div id="frontend">
         {% block frontend %}{% endblock %}
     </div>
@@ -38,5 +39,19 @@
 </script>
 <!-------------------- TypedJS  -------------------->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed = new Typed(".animate",{
+    strings: [
+        "We're a car rental service.",
+        "We're located at Sharm El Sheikh",
+        "We have cars that match your needs.",
+        "We bring your choice to you.",
+    ],
+    typeSpeed: 40,
+    backSpeed: 0,
+    loop: true,
+    smartBackspace: true,    
+    })
+</script>
 </body>
 </html>
