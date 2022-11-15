@@ -1,5 +1,37 @@
-<!-- {% extends 'core/base.html' %} -->
-<!-- {% block title %}Cars{% endblock  %} -->
-<!-- {% block cars %} -->
-    <h1>This is the car' par->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>t</h1>
-<!-- {% endblock  %} -->
+{% extends "core/base.html" %}
+{% load static %}
+{% block title %} Home{% endblock %}
+{% block cars %}
+<div>
+    <h3>This is the title</h3>
+    <img  src="{% static 'images/car.jpeg' %}">
+</div>
+<div>
+    <h3>This is the title</h3>
+    <img  src="{% static 'images/car.jpeg' %}">
+</div>
+<div>
+    <h3>This is the title</h3>
+    <img  src="{% static 'images/car.jpeg' %}">
+</div>
+<div>
+    <h3>This is the title</h3>
+    <img  src="{% static 'images/car.jpeg' %}">
+</div>
+<div>
+    <h3>This is the title</h3>
+    <img  src="{% static 'images/car.jpeg' %}">
+</div>
+<div>
+    <h3>This is the title</h3>
+    <img  src="{% static 'images/car.jpeg' %}">
+</div>
+<div>
+    <h3>This is the title</h3>
+    <img  src="{% static 'images/car.jpeg' %}">
+</div>
+
+
+
+
+{% endblock %}
