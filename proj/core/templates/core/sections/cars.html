@@ -2,36 +2,14 @@
 {% load static %}
 {% block title %} Home{% endblock %}
 {% block cars %}
+{% for car in cars %}
 <div>
-    <h3>This is the title</h3>
-    <img  src="{% static 'images/car.jpeg' %}">
+    <h3>{{car.brand}} </h3>
+    <div style="position:relative;"> <a href="#"><img src="{{ car.image.url }}" /></a></div>
+    <h3
+        style="background-color: brown; color: white;position: absolute; margin-top: -50px;margin-left: 0px;margin-top: -48px;">
+        $<span style="margin-right: 5px; font-weight: bolder;">{{car.price}}</span>
+    </h3>
 </div>
-<div>
-    <h3>This is the title</h3>
-    <img  src="{% static 'images/car.jpeg' %}">
-</div>
-<div>
-    <h3>This is the title</h3>
-    <img  src="{% static 'images/car.jpeg' %}">
-</div>
-<div>
-    <h3>This is the title</h3>
-    <img  src="{% static 'images/car.jpeg' %}">
-</div>
-<div>
-    <h3>This is the title</h3>
-    <img  src="{% static 'images/car.jpeg' %}">
-</div>
-<div>
-    <h3>This is the title</h3>
-    <img  src="{% static 'images/car.jpeg' %}">
-</div>
-<div>
-    <h3>This is the title</h3>
-    <img  src="{% static 'images/car.jpeg' %}">
-</div>
-
-
-
-
+{% endfor %}
 {% endblock %}

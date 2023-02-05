@@ -1,0 +1,152 @@
+/*! Start Break Points */
+    /*  Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) { ... }
+
+    Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) { ... }
+
+    Large devices (desktops, 992px and up)
+    @media (min-width: 992px) { ... }
+
+    X-Large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) { ... }
+
+    XX-Large devices (larger desktops, 1400px and up)
+    @media (min-width: 1400px) { ... } */
+/*! End Break Points */
+
+
+
+/**************************************** Start Global Vars ****************************************/
+:root {
+    --main-color:rgb(220,53,69);
+    --bg-color:#ffffff;
+}
+
+/**************************************** End Global Vars ****************************************/
+
+/****************************************? Start Layout ****************************************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/****************************************? End Layout ****************************************/
+
+/**************************************** Start Logo ****************************************/
+#logo {
+    height: 70px;
+    width: auto;
+}
+/**************************************** End Logo ****************************************/
+/****************************************? Start Nav List ****************************************/
+
+#header{
+    position: fixed;
+    z-index: 1;
+}
+
+#nav-ul li button:hover{
+    background-color: white;
+    color: #dc3545;
+    border-color: #ffffff;
+    
+}
+
+#nav-link.active,
+#nav-link:focus,
+#nav-link:hover {
+    font-weight: bold;
+}
+
+#navbar-toggler {
+    color: var(--bg-color);
+    size: 25px;
+    border-color: var(--bg-color);
+}
+#navbar-toggler:focus {
+    box-shadow: none;
+}
+#navbar-toggler[aria-expanded='true'] {
+    border-color: var(--main-color);
+    
+}
+
+
+.login {
+    padding-left: 0px;
+}
+/****************************************? End Nav List ****************************************/
+
+/**************************************** Start Landing ****************************************/
+
+#landing{
+    position: relative;
+    margin-top: -10%;
+}
+
+#landing .landing-image::before{
+    content: '';
+    position: absolute;
+    background-color: black;
+    opacity: .4;
+    width: 100%;
+    height: calc(100% - 24px);    
+}
+
+#landing .typped{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: var(--bg-color);
+    font-weight: bolder;
+    font-size: xx-large;
+    font-family: 'lobster','Alfa Slab One','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/**************************************** End Landing ****************************************/
+
+/**************************************** Start Cars ****************************************/
+#frontend{
+    
+}
+
+#cars{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: -18px;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row
+    /* background-color: #403a30; */
+}
+#cars div{
+    background-color: #ffffff;
+    /* border: 1px solid var(--main-color); */
+    border-radius: 5px;
+    text-align: center;
+    
+    font-weight: 800;
+    font-size: large;
+    margin-bottom: 5px;
+    
+}
+#cars div  img{
+    width: 440px;
+    height: auto;
+    border-radius:7px;
+    margin-bottom: 5px;    
+}
+
+#cars div h3{
+    padding-top: 5px;
+    color: var(--main-color);
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: cursive, 'Times New Roman', Times, serif;
+}
+
+/**************************************** End Cars ****************************************/

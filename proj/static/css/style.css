@@ -121,24 +121,22 @@
     gap: 10px;
     flex-wrap: wrap;
     flex-direction: row
-    /* background-color: #403a30; */
 }
 #cars div{
     background-color: #ffffff;
-    /* border: 1px solid var(--main-color); */
     border-radius: 5px;
-    text-align: center;
-    
+    text-align: center;    
     font-weight: 800;
     font-size: large;
     margin-bottom: 5px;
     
 }
-#cars div  img{
-    width: 440px;
-    height: auto;
+#cars div img{
+    width: 320px;
+    height: 200px;
     border-radius:7px;
-    margin-bottom: 5px;    
+    margin-bottom: 5px;  
+    object-fit: cover;
 }
 
 #cars div h3{
@@ -147,6 +145,27 @@
     border-radius: 5px;
     font-weight: bold;
     font-family: cursive, 'Times New Roman', Times, serif;
+
+}
+#cars div img:hover{
+    opacity: .8;
 }
 
+
 /**************************************** End Cars ****************************************/
+/**************************************** Start Arrow-Up ****************************************/
+#arrow-up{
+    
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+#arrow-up a{
+    position: sticky;
+    color: var(--main-color);
+    width: 200px;
+    height: auto;
+    /* background: var(--bg-color); */
+}
+/**************************************** End Arrow-Up ****************************************/

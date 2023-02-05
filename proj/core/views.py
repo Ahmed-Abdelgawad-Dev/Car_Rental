@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-
+from .models import Car
 # Create your views here.
 def cars_list(request):
-    return render(request, 'core/sections/cars.html')
+    cars = Car.objects.all()[:10]
+    return render(request, 'core/sections/cars.html', {'cars':cars})
