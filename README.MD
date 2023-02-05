@@ -1,43 +1,14 @@
-# Instagrami
+# Car Rental
+
 ![](https://github.com/Ahmed-Abdelgawad-Dev/Car_Rental/blob/main/gifs/1.gif)
 
-Backend FastAPI & React UI
-
-This is an Instagram like simple project intended to work with any UI JS framework, here UI lib used is React.js.
-
----
-
-#### Database
-
-SQLITE is used, but any other database can be used instead in case of production.
-
-##### Database Schema:
-
-<p align="center">
-  <img src="pics/db_schema.png" width=600 height=400 />
-</p>
-
----
-##### Authentication OAuth2 is used :
-
-<p align="center">
-  <img src="pics/oauth.png" width=600 height=400/>
-</p>
-
----
-##### Endpoints :
-
-<p align="center">
-  <img src="pics/endpoints.png" width=600 height=400/>
-</p>
+A full-stack project using Django
 
 ---
 
 #### Start
 
-* Clone the repo:  ***git clone*** **<https://github.com/Ahmed-Abdelgawad-Dev/Instagrami.git>**
-
-###### FastAPI
+* Clone the repo:  ***git clone*** **<https://github.com/Ahmed-Abdelgawad-Dev/Car_Rental.git>**
 
 * Use a virtual environment that you prefere.Could be pipenv | venv | conda. in Instagrami main folder.
 * activate your choice virtual environment, in my case (Unix):
@@ -46,31 +17,21 @@ SQLITE is used, but any other database can be used instead in case of production
 source ./venv/bin/activate
 ```
 
-* Go to src folder
-* Install the required packages
+* Install the required packages for the project.
 
 ```shell
 pip install -r requirements.txt
 ```
 
-* Run the server
+* Go to proj folder
+* create a user if needed or use (usr:admin - pwd:admin)
 
 ```shell
-uvicorn main:app --reload
+python manage.py runserver
 ```
 
----
-
-###### React
-
-* Go to the ui folder:
-* Install node_modules:
+* run the project
 
 ```shell
-npm install || yarn
+./manage.py runserver
 ```
-
-* Run the server:
-
-```shell
-npm ru start
